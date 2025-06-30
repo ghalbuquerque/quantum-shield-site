@@ -7,11 +7,11 @@ import path from 'path'
 export default defineConfig({
     plugins: [react(), tailwindcss()],
      base: '/quantum-shield-site/', // Adicione esta linha
-//   resolve: {
-//     alias: {
-//       "@": path.resolve(__dirname, "./src"),
-//     },
-//   },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 })
 
 
