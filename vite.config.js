@@ -1,24 +1,25 @@
-// import { defineConfig } from 'vite'
-// import react from '@vitejs/plugin-react'
-// import tailwindcss from '@tailwindcss/vite'
-// import path from 'path'
-// 
-// // https://vite.dev/config/
-// export default defineConfig({
-//   plugins: [react(),tailwindcss()],
-//   resolve: {
-//     alias: {
-//       "@": path.resolve(__dirname, "./src"),
-//     },
-//   },
-// })
-
-
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path'
 
-// https://vitejs.dev/config/
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react( )],
-  base: '/quantum-shield-site/', // Adicione esta linha
+    plugins: [react(), tailwindcss()],
+     base: '/quantum-shield-site/', // Adicione esta linha
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 })
+
+
+// import { defineConfig } from 'vite'
+// import react from '@vitejs/plugin-react'
+// 
+// // https://vitejs.dev/config/
+// export default defineConfig({
+//   plugins: [react( )],
+//   base: '/quantum-shield-site/', // Adicione esta linha
+// })
